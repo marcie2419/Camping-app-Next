@@ -16,11 +16,13 @@ const Download = (props) => {
             className="image"
           />
           <div className="container1">
-            <h1 className="text">Je bent op de goede weg</h1>
-            <h2 className="text1">Het is simpel, beloofd</h2>
+            <h1 className="text">Bedankt!</h1>
+            <h2 className="text1">
+              <span>Je download begint binnen enkele seconden...</span>
+            </h2>
+            <span>Klik hier als de download niet start</span>
             <div className="btn-group">
-              <button className="button">Download nu</button>
-              <button className="button1 button">Hulp nodig?</button>
+              <button className="button">Hulp nodig?</button>
             </div>
           </div>
         </div>
@@ -70,26 +72,14 @@ const Download = (props) => {
             flex-direction: row;
           }
           .button {
-            color: var(--dl-color-gray-white);
             transition: 0.3s;
+            margin-left: 2px;
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-twounits);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-unit);
-            background-color: var(--dl-color-gray-black);
           }
           .button:hover {
-            transform: scale(1.02);
-          }
-          .button1 {
-            transition: 0.3s;
-            margin-left: var(--dl-space-space-unit);
-            padding-top: var(--dl-space-space-unit);
-            padding-left: var(--dl-space-space-twounits);
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
-          }
-          .button1:hover {
             transform: scale(1.02);
           }
           @media (max-width: 991px) {
@@ -135,7 +125,7 @@ const Download = (props) => {
             .btn-group {
               flex-direction: column;
             }
-            .button1 {
+            .button {
               margin-top: var(--dl-space-space-unit);
               margin-left: 0px;
             }
