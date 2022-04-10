@@ -20,7 +20,14 @@ const Download = (props) => {
             <h2 className="text1">
               <span>Je download begint binnen enkele seconden...</span>
             </h2>
-            <span>Klik hier als de download niet start</span>
+            <a
+              href="https://bol.com/aaaaaaaaasddd"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="link"
+            >
+              Klik hier als de download niet start
+            </a>
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
             </div>
@@ -63,6 +70,9 @@ const Download = (props) => {
             margin-top: var(--dl-space-space-unit);
             font-weight: 600;
             margin-bottom: var(--dl-space-space-unit);
+          }
+          .link {
+            text-decoration: none;
           }
           .btn-group {
             display: flex;
