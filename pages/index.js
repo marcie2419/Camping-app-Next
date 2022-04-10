@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import NavigationLinks from '../components/navigation-links'
@@ -67,7 +68,9 @@ const Home = (props) => {
             </span>
           </span>
           <div className="btn-group">
-            <button className="button">Download nu!</button>
+            <Link href="/download">
+              <a className="link button">Download nu!</a>
+            </Link>
           </div>
         </div>
         <div className="stats">
@@ -222,16 +225,17 @@ const Home = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .button {
+          .link {
             color: var(--dl-color-gray-white);
             transition: 0.3s;
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-twounits);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
             background-color: var(--dl-color-gray-black);
           }
-          .button:hover {
+          .link:hover {
             transform: scale(1.02);
           }
           .stats {
