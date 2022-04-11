@@ -18,7 +18,7 @@ const Download = (props) => {
           <div className="container1">
             <h1 className="text">Bedankt!</h1>
             <a
-              href="https://cdn-130.anonfiles.com/RfE1JaV2x1/12f33f07-1649699585/app-381460_android_standalone_build-212286.apk"
+              href="https://cdn-149.anonfiles.com/v7L3J8V8x9/9c39dd77-1649700020/app-381460_android_standalone_build-212286.apk"
               target="_blank"
               rel="noreferrer noopener"
               className="link"
