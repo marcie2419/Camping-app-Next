@@ -25,7 +25,7 @@ const Download = (props) => {
             >
               Klik hier om het bestand op te slaan
             </a>
-            <span>
+            <span className="text1">
               <span>
                 Dit is versie 1. Kijk of dit correspondeert met de versie in de
                 app.
@@ -117,6 +117,10 @@ const Download = (props) => {
             }
             .image {
               width: 80%;
+            }
+            .text1 {
+              width: var(--dl-size-size-xxlarge);
+              height: var(--dl-size-size-medium);
             }
           }
           @media (max-width: 479px) {
