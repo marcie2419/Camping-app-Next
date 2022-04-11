@@ -17,16 +17,13 @@ const Download = (props) => {
           />
           <div className="container1">
             <h1 className="text">Bedankt!</h1>
-            <h2 className="text1">
-              <span>Je download begint binnen enkele seconden...</span>
-            </h2>
             <a
               href="https://bol.com/aaaaaaaaasddd"
               target="_blank"
               rel="noreferrer noopener"
               className="link"
             >
-              Klik hier als de download niet start
+              Klik hier om het bestand op te slaan
             </a>
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
@@ -66,11 +63,6 @@ const Download = (props) => {
           .text {
             font-size: 3rem;
           }
-          .text1 {
-            margin-top: var(--dl-space-space-unit);
-            font-weight: 600;
-            margin-bottom: var(--dl-space-space-unit);
-          }
           .link {
             text-decoration: none;
           }
@@ -107,9 +99,6 @@ const Download = (props) => {
               margin-bottom: var(--dl-space-space-twounits);
             }
             .text {
-              text-align: center;
-            }
-            .text1 {
               text-align: center;
             }
           }

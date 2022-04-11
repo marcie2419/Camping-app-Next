@@ -25,7 +25,7 @@ class CustomDocument extends Document {
           ></style>
           <link
             rel="shortcut icon"
-            href="/playground_assets/screenshot 2022-04-10 22.12.11.png"
+            href="/playground_assets/png-transparent-letter-case-m-letter-m-miscellaneous-text-trademark.png"
             type="icon/png"
             sizes="32x32"
           ></link>
