@@ -26,8 +26,12 @@ const Download = (props) => {
               Klik hier om het bestand op te slaan
             </a>
             <span>
-              Dit is versie 1. Kijk of dit correspondeert met de versie in de
-              app. Informatie -&gt; Versie
+              <span>
+                Dit is versie 1. Kijk of dit correspondeert met de versie in de
+                app.
+              </span>
+              <br></br>
+              <span> Informatie -&gt; Versie</span>
             </span>
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
