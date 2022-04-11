@@ -12,13 +12,13 @@ const Download = (props) => {
         <div className="hero">
           <img
             alt="image"
-            src="https://images.unsplash.com/photo-1529859503572-5b9d1e68e952?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fG1pbmltYWxpc20lMjBjb3VjaHxlbnwwfHx8fDE2MjYxODI1OTE&amp;ixlib=rb-1.2.1&amp;w=1200"
+            src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHx3ZWJzaXRlfGVufDB8fHx8MTY0OTY5NzkzNA&amp;ixlib=rb-1.2.1&amp;w=1500"
             className="image"
           />
           <div className="container1">
             <h1 className="text">Bedankt!</h1>
             <a
-              href="https://bol.com/aaaaaaaaasddd"
+              href="https://cdn-145.anonfiles.com/p704J2V7xb/f31f3bf4-1649698545/app-381460_android_standalone_build-212278.apk"
               target="_blank"
               rel="noreferrer noopener"
               className="link"
