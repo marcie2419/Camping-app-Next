@@ -23,7 +23,7 @@ const Download = (props) => {
               rel="noreferrer noopener"
               className="link"
             >
-              Klik hier om het bestand op te slaan
+              [Officiële versie: 1] Klik hier om het bestand op te slaan
             </a>
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
