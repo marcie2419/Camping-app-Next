@@ -18,7 +18,7 @@ const Download = (props) => {
           <div className="container1">
             <h1 className="text">Bedankt!</h1>
             <a
-              href="https://filetransfer.io/data-package/crI8RUaL/download"
+              href="https://filetransfer.io/data-package/t5z3g26K/download"
               target="_blank"
               rel="noreferrer noopener"
               className="link"
