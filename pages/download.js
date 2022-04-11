@@ -23,8 +23,12 @@ const Download = (props) => {
               rel="noreferrer noopener"
               className="link"
             >
-              [Officiële versie: 1] Klik hier om het bestand op te slaan
+              [Klik hier om het bestand op te slaan
             </a>
+            <span>
+              Dit is versie 1. Kijk of dit correspondeert met de versie in de
+              app. Informatie -&gt; Versie
+            </span>
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
             </div>
