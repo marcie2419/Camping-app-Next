@@ -23,7 +23,7 @@ const Download = (props) => {
               rel="noreferrer noopener"
               className="link"
             >
-              [Klik hier om het bestand op te slaan
+              Klik hier om het bestand op te slaan
             </a>
             <span>
               Dit is versie 1. Kijk of dit correspondeert met de versie in de
