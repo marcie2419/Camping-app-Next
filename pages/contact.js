@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 const Contact = (props) => {
@@ -11,24 +12,29 @@ const Contact = (props) => {
         </Head>
         <div className="hero">
           <div className="container1">
-            <h1 className="text">We gaan het oplossen.</h1>
-            <span className="text1">
-              Heb je een fout ontdekt? Of heb je een suggestie voor een nieuwe
-              funtie? Neem dan contact op met ons via marc.horstra@gmail.com of
-              SMS/MMS naar 06-83919623
-            </span>
-            <div className="btn-group">
-              <a
-                href="mailto:marc.horstra@gmail.com?subject=Vraag/suggestie/opmerking"
-                className="link button"
-              >
-                E-mail
-              </a>
-              <a href="tel:+31683919623" className="link1 button">
-                Telefoon
-              </a>
-              <span>Alleen SMS/MMS</span>
+            <div className="container2">
+              <h1 className="text">We gaan het oplossen.</h1>
+              <span className="text1">
+                Heb je een fout ontdekt? Of heb je een suggestie voor een nieuwe
+                funtie? Neem dan contact op met ons via marc.horstra@gmail.com
+                of SMS/MMS naar 06-83919623
+              </span>
+              <div className="btn-group">
+                <a
+                  href="mailto:marc.horstra@gmail.com?subject=Vraag/suggestie/opmerking"
+                  className="link button"
+                >
+                  E-mail
+                </a>
+                <a href="tel:+31683919623" className="link1 button">
+                  Telefoon
+                </a>
+                <span>Alleen SMS/MMS</span>
+              </div>
             </div>
+            <Link href="/">
+              <a className="link2">&lt;- Keer terug naar de homepagina</a>
+            </Link>
           </div>
           <img
             alt="image"
@@ -58,8 +64,15 @@ const Contact = (props) => {
             justify-content: space-between;
           }
           .container1 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
             display: flex;
-            margin-right: var(--dl-space-space-threeunits);
+            align-items: space-between;
+            flex-direction: column;
+          }
+          .container2 {
+            display: flex;
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
           }
@@ -68,6 +81,7 @@ const Contact = (props) => {
             max-width: 450px;
           }
           .text1 {
+            width: var(--dl-size-size-xxlarge);
             margin-top: var(--dl-space-space-twounits);
             margin-bottom: var(--dl-space-space-twounits);
           }
@@ -90,16 +104,19 @@ const Contact = (props) => {
           }
           .link1 {
             transition: 0.3s;
-            margin-left: var(--dl-space-space-unit);
             padding-top: var(--dl-space-space-unit);
-            border-color: transparent;
             padding-left: var(--dl-space-space-twounits);
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
           .link1:hover {
-            border-color: var(--dl-color-gray-black);
+            color: var(--dl-color-gray-white);
+            background-color: var(--dl-color-gray-black);
+          }
+          .link2 {
+            width: var(--dl-size-size-xxlarge);
+            text-decoration: none;
           }
           .image {
             width: 400px;
@@ -109,7 +126,7 @@ const Contact = (props) => {
             .hero {
               flex-direction: column;
             }
-            .container1 {
+            .container2 {
               align-items: center;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
@@ -144,15 +161,11 @@ const Contact = (props) => {
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .container1 {
+            .container2 {
               margin-bottom: var(--dl-space-space-unit);
             }
             .btn-group {
               flex-direction: column;
-            }
-            .link1 {
-              margin-top: var(--dl-space-space-unit);
-              margin-left: 0px;
             }
           }
         `}
