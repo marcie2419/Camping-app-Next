@@ -398,7 +398,7 @@ const Home = (props) => {
               padding: 16px;
             }
             .text {
-              width: 430px;
+              width: 348px;
             }
             .banner {
               padding-top: var(--dl-space-space-twounits);
