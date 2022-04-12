@@ -104,10 +104,11 @@ const Home = (props) => {
               naar 06-83919623 (Lokaal tarief)
             </span>
           </div>
-          <Link href="/contact">
-            <a className="link1 button">Contact opnemen</a>
-          </Link>
         </div>
+        <Link href="/contact">
+          <a className="link1 button">Contact opnemen</a>
+        </Link>
+        <div className="container3"></div>
       </div>
       <style jsx>
         {`
@@ -326,6 +327,14 @@ const Home = (props) => {
           }
           .link1 {
             text-decoration: none;
+          }
+          .container3 {
+            flex: 0 0 auto;
+            width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            height: 100px;
+            display: flex;
+            align-items: flex-start;
           }
           @media (max-width: 991px) {
             .text05 {
