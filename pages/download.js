@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 const Download = (props) => {
@@ -36,6 +37,9 @@ const Download = (props) => {
             <div className="btn-group">
               <button className="button">Hulp nodig?</button>
             </div>
+            <Link href="/">
+              <a className="link1">&lt;- Keer terug naar de homepagina</a>
+            </Link>
           </div>
         </div>
       </div>
@@ -91,6 +95,9 @@ const Download = (props) => {
           }
           .button:hover {
             transform: scale(1.02);
+          }
+          .link1 {
+            text-decoration: none;
           }
           @media (max-width: 991px) {
             .hero {
