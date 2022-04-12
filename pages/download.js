@@ -24,9 +24,13 @@ const Download = (props) => {
               rel="noreferrer noopener"
               className="link"
             >
-              Klik hier om het bestand op te slaan
+              <span>Klik hier om het bestand op te slaan</span>
+              <br></br>
+              <span></span>
+              <br></br>
+              <span></span>
             </a>
-            <span className="text1">
+            <span className="text06">
               <span>
                 Dit is versie 1. Kijk of dit correspondeert met de versie in de
                 app.
@@ -125,7 +129,7 @@ const Download = (props) => {
             .image {
               width: 80%;
             }
-            .text1 {
+            .text06 {
               width: var(--dl-size-size-xxlarge);
               height: var(--dl-size-size-medium);
             }
