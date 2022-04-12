@@ -36,10 +36,6 @@ const Contact = (props) => {
             className="image"
           />
         </div>
-        <h1>
-          Er is hard gewerkt aan de website. Heb je tips of feedback? Dankjewel!
-        </h1>
-        <textarea placeholder="placeholder" className="textarea"></textarea>
       </div>
       <style jsx>
         {`
