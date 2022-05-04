@@ -5,55 +5,55 @@ import PropTypes from 'prop-types'
 const NavigationLinks1 = (props) => {
   return (
     <>
-      <nav className={`nav ${props.rootClassName} `}>
-        <span className="text">{props.text}</span>
-        <span className="text1">{props.text1}</span>
-        <span className="text2">{props.text2}</span>
-        <span className="text3">{props.text3}</span>
-        <span className="text4">{props.text4}</span>
+      <nav className={`navigation-links1-nav ${props.rootClassName} `}>
+        <span className="navigation-links1-text">{props.text}</span>
+        <span className="navigation-links1-text1">{props.text1}</span>
+        <span className="navigation-links1-text2">{props.text2}</span>
+        <span className="navigation-links1-text3">{props.text3}</span>
+        <span className="navigation-links1-text4">{props.text4}</span>
       </nav>
       <style jsx>
         {`
-          .nav {
+          .navigation-links1-nav {
             flex: 0 0 auto;
             display: flex;
             align-items: center;
             flex-direction: row;
           }
-          .text1 {
+          .navigation-links1-text1 {
             margin-left: var(--dl-space-space-twounits);
           }
-          .text2 {
+          .navigation-links1-text2 {
             margin-left: var(--dl-space-space-twounits);
           }
-          .text3 {
+          .navigation-links1-text3 {
             margin-left: var(--dl-space-space-twounits);
           }
-          .text4 {
+          .navigation-links1-text4 {
             margin-left: var(--dl-space-space-twounits);
           }
 
           @media (max-width: 767px) {
-            .nav {
+            .navigation-links1-nav {
               align-items: flex-start;
               flex-direction: column;
             }
-            .text {
+            .navigation-links1-text {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .text1 {
+            .navigation-links1-text1 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .text2 {
+            .navigation-links1-text2 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .text3 {
+            .navigation-links1-text3 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .text4 {
+            .navigation-links1-text4 {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }

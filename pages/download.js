@@ -5,24 +5,24 @@ import Head from 'next/head'
 const Download = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="download-container">
         <Head>
           <title>Download - Camping app</title>
           <meta property="og:title" content="Download - Camping app" />
         </Head>
-        <div className="hero">
+        <div className="download-hero">
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHx3ZWJzaXRlfGVufDB8fHx8MTY0OTY5NzkzNA&amp;ixlib=rb-1.2.1&amp;w=1500"
-            className="image"
+            className="download-image"
           />
-          <div className="container1">
-            <h1 className="text">Bedankt!</h1>
+          <div className="download-container1">
+            <h1 className="download-text">Bedankt!</h1>
             <a
               href="https://filetransfer.io/data-package/t5z3g26K/download"
               target="_blank"
               rel="noreferrer noopener"
-              className="link"
+              className="download-link"
             >
               <span>Klik hier om het bestand op te slaan</span>
               <br></br>
@@ -30,26 +30,28 @@ const Download = (props) => {
               <br></br>
               <span></span>
             </a>
-            <span className="text06">
+            <span className="download-text06">
               <span>
-                Dit is versie 1. Kijk of dit correspondeert met de versie in de
-                app.
+                Dit is versie 1.1. Kijk of dit correspondeert met de versie in
+                de app.
               </span>
               <br></br>
               <span> Informatie -&gt; Versie</span>
             </span>
-            <div className="btn-group">
-              <button className="button">Hulp nodig?</button>
+            <div className="download-btn-group">
+              <button className="download-button button">Hulp nodig?</button>
             </div>
             <Link href="/">
-              <a className="link1">&lt;- Keer terug naar de homepagina</a>
+              <a className="download-link1">
+                &lt;- Keer terug naar de homepagina
+              </a>
             </Link>
           </div>
         </div>
       </div>
       <style jsx>
         {`
-          .container {
+          .download-container {
             width: 100%;
             display: flex;
             overflow: auto;
@@ -57,7 +59,7 @@ const Download = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero {
+          .download-hero {
             width: 100%;
             display: flex;
             padding: var(--dl-space-space-twounits);
@@ -67,29 +69,29 @@ const Download = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .image {
+          .download-image {
             width: 25rem;
             object-fit: cover;
           }
-          .container1 {
+          .download-container1 {
             width: 701px;
             display: flex;
             flex-direction: column;
           }
-          .text {
+          .download-text {
             font-size: 3rem;
           }
-          .link {
+          .download-link {
             text-decoration: none;
           }
-          .btn-group {
+          .download-btn-group {
             display: flex;
             margin-top: var(--dl-space-space-unit);
             align-items: center;
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: row;
           }
-          .button {
+          .download-button {
             transition: 0.3s;
             margin-left: 2px;
             padding-top: var(--dl-space-space-unit);
@@ -97,57 +99,57 @@ const Download = (props) => {
             padding-right: var(--dl-space-space-twounits);
             padding-bottom: var(--dl-space-space-unit);
           }
-          .button:hover {
+          .download-button:hover {
             transform: scale(1.02);
           }
-          .link1 {
+          .download-link1 {
             text-decoration: none;
           }
           @media (max-width: 991px) {
-            .hero {
+            .download-hero {
               padding: var(--dl-space-space-threeunits);
               flex-direction: column;
             }
-            .image {
+            .download-image {
               order: 2;
             }
-            .container1 {
+            .download-container1 {
               align-items: center;
               margin-left: 0px;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .text {
+            .download-text {
               text-align: center;
             }
           }
           @media (max-width: 767px) {
-            .hero {
+            .download-hero {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .image {
+            .download-image {
               width: 80%;
             }
-            .text06 {
+            .download-text06 {
               width: var(--dl-size-size-xxlarge);
               height: var(--dl-size-size-medium);
             }
           }
           @media (max-width: 479px) {
-            .hero {
+            .download-hero {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .container1 {
+            .download-container1 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .btn-group {
+            .download-btn-group {
               flex-direction: column;
             }
-            .button {
+            .download-button {
               margin-top: var(--dl-space-space-unit);
               margin-left: 0px;
             }

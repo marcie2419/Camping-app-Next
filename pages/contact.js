@@ -5,47 +5,49 @@ import Head from 'next/head'
 const Contact = (props) => {
   return (
     <>
-      <div className="container">
+      <div className="contact-container">
         <Head>
           <title>Contact - Camping app</title>
           <meta property="og:title" content="Contact - Camping app" />
         </Head>
-        <div className="hero">
-          <div className="container1">
-            <div className="container2">
-              <h1 className="text">We gaan het oplossen.</h1>
-              <span className="text1">
+        <div className="contact-hero">
+          <div className="contact-container1">
+            <div className="contact-container2">
+              <h1 className="contact-text">We gaan het oplossen.</h1>
+              <span className="contact-text1">
                 Heb je een fout ontdekt? Of heb je een suggestie voor een nieuwe
                 funtie? Neem dan contact op met ons via marc.horstra@gmail.com
                 of SMS/MMS naar 06-83919623
               </span>
-              <div className="btn-group">
+              <div className="contact-btn-group">
                 <a
                   href="mailto:marc.horstra@gmail.com?subject=Vraag/suggestie/opmerking"
-                  className="link button"
+                  className="contact-link button"
                 >
                   E-mail
                 </a>
-                <a href="tel:+31683919623" className="link1 button">
+                <a href="tel:+31683919623" className="contact-link1 button">
                   Telefoon
                 </a>
                 <span>Alleen SMS/MMS</span>
               </div>
             </div>
             <Link href="/">
-              <a className="link2">&lt;- Keer terug naar de homepagina</a>
+              <a className="contact-link2">
+                &lt;- Keer terug naar de homepagina
+              </a>
             </Link>
           </div>
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxtaW5pbWFsaXNtJTIwZ3JlZW58ZW58MHx8fHwxNjI1ODQxMDcw&amp;ixlib=rb-1.2.1&amp;h=1200"
-            className="image"
+            className="contact-image"
           />
         </div>
       </div>
       <style jsx>
         {`
-          .container {
+          .contact-container {
             width: 100%;
             display: flex;
             overflow: auto;
@@ -53,7 +55,7 @@ const Contact = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .hero {
+          .contact-hero {
             width: 100%;
             display: flex;
             padding: var(--dl-space-space-threeunits);
@@ -63,7 +65,7 @@ const Contact = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .container1 {
+          .contact-container1 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -71,26 +73,26 @@ const Contact = (props) => {
             align-items: space-between;
             flex-direction: column;
           }
-          .container2 {
+          .contact-container2 {
             display: flex;
             padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
           }
-          .text {
+          .contact-text {
             font-size: 3rem;
             max-width: 450px;
           }
-          .text1 {
+          .contact-text1 {
             width: var(--dl-size-size-xxlarge);
             margin-top: var(--dl-space-space-twounits);
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .btn-group {
+          .contact-btn-group {
             display: flex;
             align-items: center;
             flex-direction: row;
           }
-          .link {
+          .contact-link {
             transition: 0.3s;
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-twounits);
@@ -98,11 +100,11 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .link:hover {
+          .contact-link:hover {
             color: var(--dl-color-gray-white);
             background-color: var(--dl-color-gray-black);
           }
-          .link1 {
+          .contact-link1 {
             transition: 0.3s;
             padding-top: var(--dl-space-space-unit);
             padding-left: var(--dl-space-space-twounits);
@@ -110,61 +112,61 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .link1:hover {
+          .contact-link1:hover {
             color: var(--dl-color-gray-white);
             background-color: var(--dl-color-gray-black);
           }
-          .link2 {
+          .contact-link2 {
             width: var(--dl-size-size-xxlarge);
             text-decoration: none;
           }
-          .image {
+          .contact-image {
             width: 400px;
             object-fit: cover;
           }
           @media (max-width: 991px) {
-            .hero {
+            .contact-hero {
               flex-direction: column;
             }
-            .container2 {
+            .contact-container2 {
               align-items: center;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
               padding-right: 0px;
             }
-            .text {
+            .contact-text {
               text-align: center;
             }
-            .text1 {
+            .contact-text1 {
               text-align: center;
               padding-left: var(--dl-space-space-threeunits);
               padding-right: var(--dl-space-space-threeunits);
             }
           }
           @media (max-width: 767px) {
-            .hero {
+            .contact-hero {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .text1 {
+            .contact-text1 {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
-            .image {
+            .contact-image {
               width: 80%;
             }
           }
           @media (max-width: 479px) {
-            .hero {
+            .contact-hero {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .container2 {
+            .contact-container2 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .btn-group {
+            .contact-btn-group {
               flex-direction: column;
             }
           }
